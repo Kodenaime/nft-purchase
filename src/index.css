@@ -3,7 +3,9 @@
 :root {
    --gray: #d7dedc;
    --white: #fefcfb;
-   --blue: #7692ff;
+   --purple:#DC0ADC;
+   --background: #0D080D;
+
    --french-rose: #9e0031;
    --royal-blue: #002866;
 
@@ -39,15 +41,15 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
-/* 
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--new-color-bg);
-  color: var(--color-white);
+ 
+  background: var(--background);
+  color: var(--white);
   line-height: 1.6;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
 }
- */
+
 
 /* GENERAL STYLES */
 
@@ -94,23 +96,23 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--white);
+  background: var(--purple);
   padding: 0.8rem 1.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--purple);
   transition: var(--transition);
 }
 
 .btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
-  border: transparent;
+  background: var(--white);
+  color: var(--purple);
   transform: scale(1.1);
 }
 
 .btn-primary {
-  background: var(--color-primary);
+  background: var(--gray);
   color: #333;
   padding: 0.7rem 1rem;
   border-radius: 0.4rem;

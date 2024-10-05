@@ -1,8 +1,15 @@
 import React from 'react'
+import Navbar from './Components/Navbar/Navbar'
+import About from './Components/About/About'
+import Cta from './Components/Cta/Cta'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+        <Navbar />
+        <About />
+        <Cta />
+    </>
   )
 }
 
