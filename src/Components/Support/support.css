@@ -1,0 +1,30 @@
+.sup-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.sup-card {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+}
+
+.sup-card:hover {
+    background: transparent;
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 990px) {
+    .sup-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .sup-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

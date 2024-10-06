@@ -1,0 +1,33 @@
+.com-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.com-cards {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.com-card {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+    height: fit-content;
+    padding: 1.5rem 1rem;
+}
+
+.com-card:hover {
+    background: transparent;
+}
+
+.com-card h2 {
+    font-size: 1.5rem;
+}
+
+.com-card p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
