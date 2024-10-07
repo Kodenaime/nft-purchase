@@ -31,3 +31,10 @@
     font-size: 0.8rem;
     font-weight: 300;
 }
+
+
+@media only screen and (max-width: 780px) {
+    .com-cards {
+        grid-template-columns: 1fr;
+    }
+}

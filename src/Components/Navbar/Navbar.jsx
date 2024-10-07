@@ -19,8 +19,8 @@ const Navbar = () => {
   const [isNavShow, setIsNavShow] = useState(false);
 
   return (
-    
-    <header>
+    <div className="wrapper">
+		 <header className='container'>
 		<a href='/home' className="logo">
           <img src={logo}  alt="Logo for the website" /> 
        </a>
@@ -28,8 +28,8 @@ const Navbar = () => {
 				<a href="/home">Home</a>
 				<a href="/visa">Market Place</a>	
 				<a href="/blog">Create</a>			
-        <a href="/blog">Community</a>	
-        <a href="/info">Support</a>
+        		<a href="/blog">Community</a>	
+        		<a href="/info">Support</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
@@ -43,6 +43,9 @@ const Navbar = () => {
 				<FaBarsStaggered />
 			</button>
 	</header>
+	<div className="border"></div>
+	</div>
+   
   )
 }
 
