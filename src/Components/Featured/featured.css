@@ -10,3 +10,72 @@
     border-radius: 0.5rem;
     border: 1px solid  rgba(255, 255, 255, 0.3);
 }
+
+.feat-card a {
+    text-align: center;
+}
+
+.feat-top img {
+    border-radius: 0.5rem;
+}
+
+.feat-down {
+    margin-top: 1.5rem;
+}
+
+.feat-down .name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feat-down .bot {
+    background: rgba(220, 10, 220 ,0.2);;
+    padding: 0.3rem;
+    color: var(--purple);
+    border-radius: 1rem;
+    font-size: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feat-down .feat-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feat-down .feat-cont h5 {
+    font-weight: lighter;
+}
+
+.feat-down .feat-cont a {
+    text-align: center;
+}
+
+.button {
+    border: 1px solid var(--purple);
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feat-card a.button {
+    text-align: center;
+}
+
+@media only screen and (max-width: 920px) {
+    .feat-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    .feat-cards {
+        grid-template-columns: 1fr;
+    }
+}

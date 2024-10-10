@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './featured.css'
+import { IoFlameOutline } from "react-icons/io5";
 import { GoChevronRight } from "react-icons/go";
 import nft1 from '../../Assets/nft1.png'
 import nft2 from '../../Assets/nft2.png'
@@ -27,7 +28,7 @@ const Featured = () => {
           <div className="feat-down">
             <div className="name">
               <h3>Guy Ape</h3>
-              <a href="" className="bot">Trending Now</a>
+              <a href="" className="bot"><IoFlameOutline /> Trending Now!</a>
             </div>
 
             <div className="feat-cont">
@@ -54,7 +55,7 @@ const Featured = () => {
           <div className="feat-down">
             <div className="name">
               <h3>Sassy Ape</h3>
-              <a href="" className="bot">Trending Now</a>
+              <a href="" className="bot"><IoFlameOutline /> Trending Now!</a>
             </div>
 
             <div className="feat-cont">
@@ -81,7 +82,7 @@ const Featured = () => {
           <div className="feat-down">
             <div className="name">
               <h3>Worker Ape</h3>
-              <a href="" className="bot">Trending Now</a>
+              <a href="" className="bot"><IoFlameOutline /> Trending Now!</a>
             </div>
 
             <div className="feat-cont">
@@ -108,7 +109,7 @@ const Featured = () => {
           <div className="feat-down">
             <div className="name">
               <h3>Cop Ape</h3>
-              <a href="" className="bot">Trending Now</a>
+              <a href="" className="bot"><IoFlameOutline /> Trending Now!</a>
             </div>
 
             <div className="feat-cont">
@@ -135,7 +136,7 @@ const Featured = () => {
           <div className="feat-down">
             <div className="name">
               <h3>Chill Ape</h3>
-              <a href="" className="bot">Trending Now</a>
+              <a href="" className="bot"><IoFlameOutline /> Trending Now!</a>
             </div>
 
             <div className="feat-cont">
@@ -162,7 +163,7 @@ const Featured = () => {
           <div className="feat-down">
             <div className="name">
               <h3>Thug Ape</h3>
-              <a href="" className="bot">Trending Now</a>
+              <a href="" className="bot"><IoFlameOutline /> Trending Now!</a>
             </div>
 
             <div className="feat-cont">
