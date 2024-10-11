@@ -68,7 +68,7 @@ header .nav-btn {
   color: var(--first-color);
   visibility: hidden;
   opacity: 0;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 
@@ -125,6 +125,7 @@ nav a {
 
   .boton {
     margin-right: 0;
+    display: none;
   }
   
 }

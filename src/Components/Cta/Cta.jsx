@@ -10,8 +10,10 @@ const Cta = () => {
          searching for unique digital assets, our platform makes it easy to dive into the world of NFTs.
          Start exploring or creating today!</p>
 
-      <a href="" className="btn mover">Explore Market Place</a>
-      <a href="" className="btn-primary btn">Create NFT's</a>
+      <div className="cta-btns">
+        <a href="" className="btn mover">Explore Market Place</a>
+        <a href="" className="btn-primary btn">Create NFT's</a>
+      </div>
     </section>
   )
 }

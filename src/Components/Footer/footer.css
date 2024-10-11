@@ -63,3 +63,24 @@
 .terms a:hover {
     color: var(--purple);
 }
+
+
+@media only screen and (max-width: 990px) {
+    .foot-top {
+        grid-template-columns: 1fr;
+    }
+}
+  
+
+@media only screen and (max-width: 680px) {
+    .foot-down {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-down .terms {
+        margin-top: 1rem;
+    }
+}
+   

@@ -37,4 +37,13 @@
     .com-cards {
         grid-template-columns: 1fr;
     }
+
+    .com-header {
+        flex-direction: column;
+    }
+
+    .com-header .butt {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
 }
