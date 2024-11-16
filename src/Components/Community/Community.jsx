@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './community.css'
 import { GoChevronRight } from "react-icons/go";
 
+const communityData = [
+  {
+    id: '1',
+    title: 'Royalties',
+    description: 'TEarn a percentage of each resale of your NFT.' 
+  },
+  {
+    id: '2',
+    title: 'Low Fees & Instant Transactions',
+    description: 'Enjoy low gas fees and fast transactions powered by our platform’s efficiency.' 
+  },
+  {
+    id: '3',
+    title: 'Ownership & Authenticity',
+    description: 'Every NFT is backed by blockchain technology ensuring true ownership and authenticity.' 
+  },
+  {
+    id: '4',
+    title: 'Global Marketplace',
+    description: 'Connect with buyers, sellers, and collectors from around the world.' 
+  }
+]
+
+
 const Community = () => {
+
+  const [infos, setInfos] = useState(communityData)
+  
   return (
     <section className="container section com-container">
       <div className="com-header">
@@ -15,22 +42,15 @@ const Community = () => {
       </h5>
 
       <div className="com-cards">
-        <div className="com-card">
-          <h2>Royalties</h2>
-          <p>Earn a percentage of each resale of your NFT.</p>
-        </div>
-        <div className="com-card">
-          <h2>Low Fees & Instant Transactions</h2>
-          <p>Enjoy low gas fees and fast transactions powered by our platform’s efficiency.</p>
-        </div>
-        <div className="com-card">
-          <h2>Ownership & Authenticity</h2>
-          <p>Every NFT is backed by blockchain technology ensuring true ownership and authenticity.</p>
-        </div>
-        <div className="com-card">
-          <h2>Global Marketplace</h2>
-          <p>Connect with buyers, sellers, and collectors from around the world.</p>
-        </div>
+        {
+            infos.map(({id, title, description}) => {
+              return <div key={id} className="com-card">
+                  <h2>{ title }</h2>
+                  <p>{ description }</p>
+              </div>
+            })
+        }
+
       </div>
     </section>
   )
